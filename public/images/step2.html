@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Waypoints</title>
-  </head>
-  <body>
-    <h1>Enter Waypoints</h1>
-    <form>
-      <input type="text" id="waypoint-1" placeholder="Enter waypoint 1">
-      <input type="text" id="waypoint-2" placeholder="Enter waypoint 2">
-      <!-- Add more waypoints as needed -->
-      <button onclick="submitWaypoints()">Next</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Waypoints</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>Add Waypoints</h1>
+    <form id="waypoints-form">
+        <div id="waypoints">
+            <label for="waypoint-1">Waypoint 1:</label>
+            <input type="text" id="waypoint-1" name="waypoints[]" required>
+        </div>
+        <button type="button" id="add-waypoint">Add a Waypoint</button>
+        <button type="submit">Next</button>
     </form>
-    <script src="scripts.js"></script>
-  </body>
+</body>
 </html>

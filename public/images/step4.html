@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Cargo Capacity</title>
-  </head>
-  <body>
-    <h1>Enter Cargo Capacity</h1>
-    <form>
-      <input type="number" id="cargo-capacity" placeholder="Enter cargo capacity">
-      <button onclick="submitCargoCapacity()">Next</button>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trucking Cargo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>Trucking Cargo</h1>
+    <form id="cargo-form">
+        <label for="numTrucks">Number of Trucks:</label>
+        <input type="number" id="numTrucks" name="numTrucks" required>
+        
+        <label for="cargoCapacity">Truck Capacity Range (cubic feet):</label>
+        <select id="cargoCapacity" name="cargoCapacity">
+            <option value="0-1000">0-1000</option>
+            <option value="1000-3000">1000-3000</option>
+            <option value="3000+">3000+</option>
+        </select>
+        
+        <label for="cargoByStop">Cargo by Stop:</label>
+        <textarea id="cargoByStop" name="cargoByStop" required></textarea>
+        
+        <button type="submit">Next</button>
     </form>
-    <script src="scripts.js"></script>
-  </body>
+</body>
 </html>

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>Ending Address</title>
-  </head>
-  <body>
-    <h1>Enter Ending Address</h1>
-    <form>
-      <input type="text" id="end-address" placeholder="Enter ending address">
-      <button onclick="submitEndAddress()">Next</button>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>Ending Address</h1>
+    <form id="end-form">
+        <label for="endAddress">Ending Address:</label>
+        <input type="text" id="endAddress" name="endAddress" required>
+        <button type="submit">Next</button>
     </form>
-    <script src="scripts.js"></script>
-  </body>
+</body>
 </html>
