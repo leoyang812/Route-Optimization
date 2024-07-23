@@ -158,3 +158,4 @@ app.post('/optimize', async (req, res) => {
       res.status(400).json({ error: 'No valid path found or cargo exceeds capacity' });
     }
   });
+  module.exports = app;
