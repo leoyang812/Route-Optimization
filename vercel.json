@@ -1,9 +1,10 @@
 {
-    "functions": {
-      "api/optimize.js": {
-        "memory": 1024,
-        "maxDuration": 10
-      }
+  "version": 2,
+  "functions": {
+    "api/optimize.js": {
+      "runtime": "nodejs14.x",
+      "memory": 1024,
+      "maxDuration": 10
     }
   }
-  
+}
