@@ -1,0 +1,11 @@
+{
+    "name": "route-optimization",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "node api/optimize.js"
+    },
+    "dependencies": {
+      "axios": "^0.21.1"
+    }
+  }
+  
